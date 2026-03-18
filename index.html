@@ -763,6 +763,10 @@ function trapFocus(e){
   }
 }
 
+function champSlug(rider,year){
+  return rider.toLowerCase().replace(/ /g,'-').replace(/'/g,'').replace(/\./g,'')+'_'+year;
+}
+
 function openDetail(year,riderName){
   var c=_champions.find(function(x){return x.year===year});
   if(!c)return;
@@ -808,6 +812,7 @@ function openDetail(year,riderName){
       +(c.damSire?'<div class="detail-info-item" style="grid-column:span 2"><div class="detail-info-label">Dam Sire</div><div class="detail-info-value">'+c.damSire+'</div></div>':'')
       +'</div></div>':'')
     +'<div class="detail-section"><div class="detail-section-title">The Story</div><div class="detail-narrative">'+c.narrative+'</div></div>'
+    +'<div style="padding:16px 20px 24px;text-align:center;"><a href="/champions/'+champSlug(c.rider,c.year)+'.html" style="display:inline-block;background:var(--leather);color:#fff;font-size:13px;font-weight:600;padding:10px 24px;border-radius:4px;text-decoration:none;letter-spacing:.5px;">&#128196; Full Profile &amp; Biography</a></div>'
     +'</div>';
 
   dv.classList.add('active');
