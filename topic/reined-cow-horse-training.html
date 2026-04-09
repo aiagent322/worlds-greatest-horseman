@@ -78,6 +78,15 @@ a,button,[onclick]{touch-action:manipulation}
     .related-links a:hover{color:var(--gold);}
     .footer{background:var(--leather-dark);color:rgba(255,255,255,0.7);text-align:center;padding:20px;font-size:13px;margin-top:40px;}
     .footer a{color:var(--gold);text-decoration:none;}
+
+    .cross-links{background:var(--cream-dark);border-top:2px solid var(--arena-dust);padding:20px;margin-top:8px;}
+    .cross-links h4{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--leather-dark);margin-bottom:10px;font-weight:700;}
+    .cross-links-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+    .cross-links-row:last-child{margin-bottom:0;}
+    .cross-tag{display:inline-block;background:var(--leather);color:var(--gold);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;}
+    .cross-tag:hover{background:var(--leather-dark);color:#fff;}
+    .cross-tag.champ{background:var(--cream);color:var(--leather-dark);border:1px solid var(--arena-dust);}
+    .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
 </style>
 </head>
 <body>
@@ -104,14 +113,25 @@ a,button,[onclick]{touch-action:manipulation}
   <div class="divider"></div>
   <h2>The Trainer's Role</h2>
   <p>The WGH champion is as much a tribute to its trainer as to the horse itself. Elite WGH trainers — riders like Corey Cushing, Russell Dilday, Bob Avila, and others who have claimed multiple titles — combine extraordinary riding ability with the patient, systematic training philosophy required to develop a complete champion. Their programs typically involve dozens of horses at various stages of development, year-round conditioning, and the constant refinement of each horse's individual strengths toward competition readiness.</p>
-  <div class="related-links">
-    <h3>Related Pages</h3>
-    <a href="https://worldsgreatesthorseman.com/topic/reined-cow-horse.html">What Is Reined Cow Horse?</a>
-    <a href="https://worldsgreatesthorseman.com/topic/stock-horse-breeds.html">Stock Horse Breeds</a>
-    <a href="https://worldsgreatesthorseman.com/topic/nrcha-history.html">NRCHA History</a>
-    <a href="https://worldsgreatesthorseman.com">All Champions</a>
+  
+<div class="cross-links">
+  <h4>Related Topics</h4>
+  <div class="cross-links-row">
+    <a href="/topic/reined-cow-horse.html" class="cross-tag">Reined Cow Horse</a>
+      <a href="/topic/reining-competition.html" class="cross-tag">Reining Competition</a>
+      <a href="/topic/cow-work-competition.html" class="cross-tag">Cow Work</a>
+      <a href="/topic/stock-horse-breeds.html" class="cross-tag">Stock Horse Breeds</a>
+      <a href="/topic/nrcha-points-system.html" class="cross-tag">NRCHA Points System</a>
   </div>
-
+  <h4 style="margin-top:10px;">Related Champions</h4>
+  <div class="cross-links-row">
+    <a href="/champions/corey-cushing_2019.html" class="cross-tag champ">Corey Cushing — 2019</a>
+      <a href="/champions/russell-dilday_2009.html" class="cross-tag champ">Russell Dilday — 2009</a>
+      <a href="/champions/randy-paul_2010.html" class="cross-tag champ">Randy Paul — 2010</a>
+      <a href="/champions/shane-steffen_2021.html" class="cross-tag champ">Shane Steffen — 2021</a>
+      <a href="/champions/clayton-edsall_2016.html" class="cross-tag champ">Clayton Edsall — 2016</a>
+  </div>
+</div>
 </div>
 <footer class="footer">
   <p><a href="https://worldsgreatesthorseman.com">WorldsGreatestHorseman.com</a> &#8212; The Definitive NRCHA Championship Record</p>
