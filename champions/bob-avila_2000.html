@@ -111,7 +111,16 @@ a,button,[onclick]{touch-action:manipulation}
       .horse-grid{grid-template-columns:1fr 1fr;}
       .champ-nav{padding:12px 24px;}
     }
-  </style>
+  
+    .cross-links{background:var(--cream-dark);border-top:2px solid var(--arena-dust);padding:20px;margin-top:8px;}
+    .cross-links h4{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--leather-dark);margin-bottom:10px;font-weight:700;}
+    .cross-links-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+    .cross-links-row:last-child{margin-bottom:0;}
+    .cross-tag{display:inline-block;background:var(--leather);color:var(--gold);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;}
+    .cross-tag:hover{background:var(--leather-dark);color:#fff;}
+    .cross-tag.champ{background:var(--cream);color:var(--leather-dark);border:1px solid var(--arena-dust);}
+    .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -149,6 +158,22 @@ a,button,[onclick]{touch-action:manipulation}
       <div class="horse-detail"><span>Location</span><strong>Guthrie, OK</strong></div>
     </div>
   </div>
+  
+<div class="cross-links">
+  <h4>Explore the Championship</h4>
+  <div class="cross-links-row">
+    <a href="/topic/bob-avila.html" class="cross-tag">Bob Avila</a>
+      <a href="/topic/nrcha-worlds-greatest-horseman.html" class="cross-tag">About the WGH</a>
+      <a href="/topic/worlds-greatest-horseman-winners.html" class="cross-tag">All-Time Champions</a>
+      <a href="/topic/reined-cow-horse.html" class="cross-tag">Reined Cow Horse</a>
+      <a href="/topic/fort-worth-stock-show.html" class="cross-tag">Fort Worth Stock Show</a>
+      <a href="/topic/reining-competition.html" class="cross-tag">Reining Competition</a>
+  </div>
+  <div class="cross-links-row">
+    <a href="/topic/worlds-greatest-horseman-winners.html" class="cross-tag">All-Time Champions</a>
+    <a href="/" class="cross-tag">← All Champions</a>
+  </div>
+</div>
   <div class="back-bar"><a href="/" class="back-btn">&#8592; All Champions</a></div>
 </main>
 <footer>
