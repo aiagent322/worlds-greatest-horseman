@@ -125,6 +125,18 @@ a,button,[onclick]{touch-action:manipulation}
     .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
 
     html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+    
+    /* ── Very small phones: 320px ── */
+    @media(max-width:359px){
+      h1.champ-name{font-size:clamp(1.1rem,4vw,1.4rem);}
+      .champ-hero{padding:16px 12px 14px;}
+      .stat-val{font-size:0.82rem;}
+      .stat-lbl{font-size:0.62rem;}
+      .score-badge{font-size:1.1rem;padding:6px 14px;}
+      .bio-section{padding:14px 12px;}
+      .horse-card{margin:0 8px 16px;padding:12px 14px;}
+      .back-btn{font-size:0.82rem;padding:8px 16px;}
+    }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;}}
     :focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:2px;}
 </style>
