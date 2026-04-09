@@ -78,6 +78,15 @@ a,button,[onclick]{touch-action:manipulation}
     .related-links a:hover{color:var(--gold);}
     .footer{background:var(--leather-dark);color:rgba(255,255,255,0.7);text-align:center;padding:20px;font-size:13px;margin-top:40px;}
     .footer a{color:var(--gold);text-decoration:none;}
+
+    .cross-links{background:var(--cream-dark);border-top:2px solid var(--arena-dust);padding:20px;margin-top:8px;}
+    .cross-links h4{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--leather-dark);margin-bottom:10px;font-weight:700;}
+    .cross-links-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+    .cross-links-row:last-child{margin-bottom:0;}
+    .cross-tag{display:inline-block;background:var(--leather);color:var(--gold);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;}
+    .cross-tag:hover{background:var(--leather-dark);color:#fff;}
+    .cross-tag.champ{background:var(--cream);color:var(--leather-dark);border:1px solid var(--arena-dust);}
+    .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
 </style>
 </head>
 <body>
@@ -103,13 +112,25 @@ a,button,[onclick]{touch-action:manipulation}
     <div class="champ-card"><div class="champ-year">2012</div><div class="champ-detail">First WGH Title<br>Fort Worth, TX</div></div>
     <div class="champ-card"><div class="champ-year">2013</div><div class="champ-detail">Back-to-Back Title<br>Fort Worth, TX</div></div>
   </div>
-  <div class="related-links">
-    <h3>Emmons Championship Pages</h3>
-    <a href="https://worldsgreatesthorseman.com/champions/ron-emmons_2012.html">2012 Championship Detail</a>
-    <a href="https://worldsgreatesthorseman.com/champions/ron-emmons_2013.html">2013 Championship Detail</a>
-    <a href="https://worldsgreatesthorseman.com/topic/worlds-greatest-horseman-winners.html">All-Time Winners List</a>
+  
+<div class="cross-links">
+  <h4>Related Topics</h4>
+  <div class="cross-links-row">
+    <a href="/topic/nrcha-worlds-greatest-horseman.html" class="cross-tag">About the WGH</a>
+      <a href="/topic/worlds-greatest-horseman-winners.html" class="cross-tag">All-Time Champions</a>
+      <a href="/topic/cow-work-competition.html" class="cross-tag">Cow Work</a>
+      <a href="/topic/fence-work-competition.html" class="cross-tag">Fence Work</a>
+      <a href="/topic/fort-worth-stock-show.html" class="cross-tag">Fort Worth Stock Show</a>
   </div>
-
+  <h4 style="margin-top:10px;">Related Champions</h4>
+  <div class="cross-links-row">
+    <a href="/champions/ron-emmons_2012.html" class="cross-tag champ">Ron Emmons — 2012</a>
+      <a href="/champions/ron-emmons_2013.html" class="cross-tag champ">Ron Emmons — 2013</a>
+      <a href="/champions/boyd-rice_2014.html" class="cross-tag champ">Boyd Rice — 2014</a>
+      <a href="/champions/corey-cushing_2015.html" class="cross-tag champ">Corey Cushing — 2015</a>
+      <a href="/champions/russell-dilday_2011.html" class="cross-tag champ">Russell Dilday — 2011</a>
+  </div>
+</div>
 </div>
 <footer class="footer">
   <p><a href="https://worldsgreatesthorseman.com">WorldsGreatestHorseman.com</a> &#8212; The Definitive NRCHA Championship Record</p>
