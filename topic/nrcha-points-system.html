@@ -78,6 +78,15 @@ a,button,[onclick]{touch-action:manipulation}
     .related-links a:hover{color:var(--gold);}
     .footer{background:var(--leather-dark);color:rgba(255,255,255,0.7);text-align:center;padding:20px;font-size:13px;margin-top:40px;}
     .footer a{color:var(--gold);text-decoration:none;}
+
+    .cross-links{background:var(--cream-dark);border-top:2px solid var(--arena-dust);padding:20px;margin-top:8px;}
+    .cross-links h4{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--leather-dark);margin-bottom:10px;font-weight:700;}
+    .cross-links-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+    .cross-links-row:last-child{margin-bottom:0;}
+    .cross-tag{display:inline-block;background:var(--leather);color:var(--gold);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;}
+    .cross-tag:hover{background:var(--leather-dark);color:#fff;}
+    .cross-tag.champ{background:var(--cream);color:var(--leather-dark);border:1px solid var(--arena-dust);}
+    .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
 </style>
 </head>
 <body>
@@ -103,15 +112,25 @@ a,button,[onclick]{touch-action:manipulation}
   <div class="divider"></div>
   <h2>Cumulative WGH Scoring</h2>
   <p>In the World's Greatest Horseman, scores from all three phases — reining, cow work (herd work and boxing), and fence work — are combined into a cumulative total. The rider with the highest combined score across all phases wins the championship. This cumulative format rewards the complete horseman rather than the specialist, which is what makes the WGH the truest test of the complete reined cow horse and the most prestigious title in the sport.</p>
-  <div class="related-links">
-    <h3>Related Pages</h3>
-    <a href="https://worldsgreatesthorseman.com/topic/nrcha-worlds-greatest-horseman.html">WGH Competition Overview</a>
-    <a href="https://worldsgreatesthorseman.com/topic/reining-competition.html">Reining Phase</a>
-    <a href="https://worldsgreatesthorseman.com/topic/cow-work-competition.html">Cow Work Phase</a>
-    <a href="https://worldsgreatesthorseman.com/topic/fence-work-competition.html">Fence Work Phase</a>
-    <a href="https://worldsgreatesthorseman.com">All Champions</a>
+  
+<div class="cross-links">
+  <h4>Related Topics</h4>
+  <div class="cross-links-row">
+    <a href="/topic/nrcha-history.html" class="cross-tag">NRCHA History</a>
+      <a href="/topic/nrcha-worlds-greatest-horseman.html" class="cross-tag">About the WGH</a>
+      <a href="/topic/reining-competition.html" class="cross-tag">Reining Competition</a>
+      <a href="/topic/cow-work-competition.html" class="cross-tag">Cow Work</a>
+      <a href="/topic/fence-work-competition.html" class="cross-tag">Fence Work</a>
   </div>
-
+  <h4 style="margin-top:10px;">Related Champions</h4>
+  <div class="cross-links-row">
+    <a href="/champions/corey-cushing_2022.html" class="cross-tag champ">Corey Cushing — 2022</a>
+      <a href="/champions/russell-dilday_2011.html" class="cross-tag champ">Russell Dilday — 2011</a>
+      <a href="/champions/corey-cushing_2019.html" class="cross-tag champ">Corey Cushing — 2019</a>
+      <a href="/champions/john-swales_2020.html" class="cross-tag champ">John Swales — 2020</a>
+      <a href="/champions/shane-steffen_2021.html" class="cross-tag champ">Shane Steffen — 2021</a>
+  </div>
+</div>
 </div>
 <footer class="footer">
   <p><a href="https://worldsgreatesthorseman.com">WorldsGreatestHorseman.com</a> &#8212; The Definitive NRCHA Championship Record</p>
