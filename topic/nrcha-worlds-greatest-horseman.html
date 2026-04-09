@@ -99,6 +99,17 @@ a,button,[onclick]{touch-action:manipulation}
     .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
 
     html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+    
+    /* ── Very small phones: 320px ── */
+    @media(max-width:359px){
+      h1{font-size:clamp(1.1rem,4.5vw,1.4rem);}
+      .hero{padding:18px 12px 16px;}
+      .hero-sub{font-size:0.88rem;}
+      .stat-val{font-size:1rem;}
+      .stat-lbl{font-size:0.62rem;}
+      .content{padding:16px 12px;}
+      h2{font-size:1.1rem;}
+    }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;}}
     :focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:2px;}
 </style>
