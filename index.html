@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>The World's Greatest Horseman | NRCHA Championship Legacy</title>
 <meta name="description" content="The definitive tribute to every NRCHA World's Greatest Horseman champion since 1999. Celebrating the legends of reined cow horse competition.">
 <meta property="og:title" content="The World's Greatest Horseman">
@@ -192,6 +192,10 @@ body{font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,sans-serif;bac
 .filter-chip:focus-visible{outline:2px solid var(--leather);outline-offset:2px}
 .champ-card:focus-visible,.legend-card:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .detail-back:focus-visible{outline:2px solid var(--gold-light);outline-offset:-3px}
+
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;}}
+    :focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:2px;}
 </style>
 <script type="application/ld+json">
 {
