@@ -78,6 +78,15 @@ a,button,[onclick]{touch-action:manipulation}
     .related-links a:hover{color:var(--gold);}
     .footer{background:var(--leather-dark);color:rgba(255,255,255,0.7);text-align:center;padding:20px;font-size:13px;margin-top:40px;}
     .footer a{color:var(--gold);text-decoration:none;}
+
+    .cross-links{background:var(--cream-dark);border-top:2px solid var(--arena-dust);padding:20px;margin-top:8px;}
+    .cross-links h4{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--leather-dark);margin-bottom:10px;font-weight:700;}
+    .cross-links-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+    .cross-links-row:last-child{margin-bottom:0;}
+    .cross-tag{display:inline-block;background:var(--leather);color:var(--gold);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;}
+    .cross-tag:hover{background:var(--leather-dark);color:#fff;}
+    .cross-tag.champ{background:var(--cream);color:var(--leather-dark);border:1px solid var(--arena-dust);}
+    .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
 </style>
 </head>
 <body>
@@ -103,14 +112,25 @@ a,button,[onclick]{touch-action:manipulation}
   <div class="divider"></div>
   <h2>What Makes a Championship Prospect?</h2>
   <p>Breeders and trainers evaluating a young horse for WGH potential look for: strong hindquarters capable of producing the explosive power required for sliding stops and fence work acceleration, a naturally low-set hock that facilitates the sliding stop, an intelligent and curious disposition that translates to cow sense, a calm and trainable temperament that allows the systematic development required over years of training, and the physical soundness to withstand the demands of high-level competition across a long career.</p>
-  <div class="related-links">
-    <h3>Related Pages</h3>
-    <a href="https://worldsgreatesthorseman.com/topic/reined-cow-horse-training.html">Reined Cow Horse Training</a>
-    <a href="https://worldsgreatesthorseman.com/topic/reined-cow-horse.html">What Is Reined Cow Horse?</a>
-    <a href="https://worldsgreatesthorseman.com/topic/nrcha-history.html">NRCHA History</a>
-    <a href="https://worldsgreatesthorseman.com">All Champions</a>
+  
+<div class="cross-links">
+  <h4>Related Topics</h4>
+  <div class="cross-links-row">
+    <a href="/topic/reined-cow-horse.html" class="cross-tag">Reined Cow Horse</a>
+      <a href="/topic/reined-cow-horse-training.html" class="cross-tag">RCH Training</a>
+      <a href="/topic/reining-competition.html" class="cross-tag">Reining Competition</a>
+      <a href="/topic/nrcha-history.html" class="cross-tag">NRCHA History</a>
+      <a href="/topic/cow-work-competition.html" class="cross-tag">Cow Work</a>
   </div>
-
+  <h4 style="margin-top:10px;">Related Champions</h4>
+  <div class="cross-links-row">
+    <a href="/champions/andy-adams_2006.html" class="cross-tag champ">Andy Adams — 2006</a>
+      <a href="/champions/boyd-rice_2014.html" class="cross-tag champ">Boyd Rice — 2014</a>
+      <a href="/champions/kelby-phillips_2018.html" class="cross-tag champ">Kelby Phillips — 2018</a>
+      <a href="/champions/randy-paul_2010.html" class="cross-tag champ">Randy Paul — 2010</a>
+      <a href="/champions/shawn-hays_2024.html" class="cross-tag champ">Shawn Hays — 2024</a>
+  </div>
+</div>
 </div>
 <footer class="footer">
   <p><a href="https://worldsgreatesthorseman.com">WorldsGreatestHorseman.com</a> &#8212; The Definitive NRCHA Championship Record</p>
