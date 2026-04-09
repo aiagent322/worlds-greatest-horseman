@@ -63,7 +63,52 @@ a,button,[onclick]{touch-action:manipulation}
     .back-btn{display:inline-block;background:var(--leather);color:#fff;font-size:13px;font-weight:600;padding:10px 24px;border-radius:4px;text-decoration:none;}
     footer{background:var(--leather-dark);color:rgba(255,255,255,0.6);text-align:center;padding:20px;font-size:12px;}
     footer a{color:var(--gold);text-decoration:none;}
-    @media(max-width:480px){h1.champ-name{font-size:clamp(1.25rem,4.5vw,1.625rem);}  .horse-grid{grid-template-columns:1fr;}}
+    
+    /* ── Stat labels: fix 9px → readable size ── */
+    .stat-val{font-size:0.875rem !important;}
+    .stat-lbl{font-size:0.7rem !important;letter-spacing:1px;}
+    .score-label{font-size:0.7rem !important;}
+    .section-label{font-size:0.7rem !important;}
+    .horse-detail span{font-size:0.7rem !important;}
+
+    /* ── Nav arrows: min touch target 44px ── */
+    .nav-arrow{padding:12px 8px;min-height:44px;display:flex;align-items:center;}
+    .header-home{min-height:44px;display:flex;align-items:center;}
+
+    /* ── Mobile: max 480px ── */
+    @media(max-width:480px){
+      h1.champ-name{font-size:clamp(1.25rem,4.5vw,1.625rem);}
+      .horse-grid{grid-template-columns:1fr;}
+      .champ-hero{padding:20px 16px 18px;}
+      .stats-bar{grid-template-columns:repeat(3,1fr);}
+      .stat{padding:10px 6px;}
+      .stat-val{font-size:0.9rem !important;}
+      .stat-lbl{font-size:0.68rem !important;}
+      .bio-section{padding:18px 16px;}
+      .horse-card{margin:0 12px 20px;}
+      .back-btn{width:100%;box-sizing:border-box;text-align:center;}
+    }
+
+    /* ── Tablet: 481px–768px ── */
+    @media(min-width:481px) and (max-width:768px){
+      h1.champ-name{font-size:clamp(1.6rem,4vw,2rem);}
+      .stat-val{font-size:0.95rem !important;}
+      .champ-hero{padding:32px 24px 28px;}
+    }
+
+    /* ── Desktop: 769px+ ── */
+    @media(min-width:769px){
+      h1.champ-name{font-size:2rem;}
+      .champ-hero{padding:40px 32px 36px;}
+      .stat{padding:16px 12px;}
+      .stat-val{font-size:1rem !important;}
+      .stat-lbl{font-size:0.72rem !important;}
+      .bio-section{padding:32px 28px;}
+      .horse-card{margin:0 28px 28px;}
+      .score-badge{font-size:1.5rem;}
+      .horse-grid{grid-template-columns:1fr 1fr;}
+      .champ-nav{padding:12px 24px;}
+    }
   </style>
 </head>
 <body>
