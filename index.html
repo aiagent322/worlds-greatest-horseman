@@ -32,8 +32,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 a,button,[onclick]{touch-action:manipulation}
 html{scroll-behavior:smooth}
-body{font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--cream);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-.site-header{background:linear-gradient(180deg,var(--leather-dark),var(--leather));padding:4px 12px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.3);color:#fff}
+body{font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--cream);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hiddenoverflow-wrap:break-word;word-break:break-word;}
+.site-header{background:linear-gradient(180deg,var(--leather-dark),var(--leather));padding:4px 12px;padding-top:max(4px,env(safe-area-inset-top));padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.3);color:#fff}
 .header-brand{display:flex;align-items:center;gap:10px}
 .header-logo{width:32px;height:32px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
 .header-title{font-family:'Playfair Display',serif;color:#fff;font-size:14px;font-weight:700;letter-spacing:.5px;line-height:1.2}
