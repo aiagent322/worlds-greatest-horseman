@@ -78,6 +78,15 @@ a,button,[onclick]{touch-action:manipulation}
     .related-links a:hover{color:var(--gold);}
     .footer{background:var(--leather-dark);color:rgba(255,255,255,0.7);text-align:center;padding:20px;font-size:13px;margin-top:40px;}
     .footer a{color:var(--gold);text-decoration:none;}
+
+    .cross-links{background:var(--cream-dark);border-top:2px solid var(--arena-dust);padding:20px;margin-top:8px;}
+    .cross-links h4{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--leather-dark);margin-bottom:10px;font-weight:700;}
+    .cross-links-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+    .cross-links-row:last-child{margin-bottom:0;}
+    .cross-tag{display:inline-block;background:var(--leather);color:var(--gold);font-size:0.75rem;font-weight:600;padding:5px 12px;border-radius:20px;text-decoration:none;white-space:nowrap;}
+    .cross-tag:hover{background:var(--leather-dark);color:#fff;}
+    .cross-tag.champ{background:var(--cream);color:var(--leather-dark);border:1px solid var(--arena-dust);}
+    .cross-tag.champ:hover{background:var(--leather);color:var(--gold);}
 </style>
 </head>
 <body>
@@ -101,13 +110,25 @@ a,button,[onclick]{touch-action:manipulation}
   <h2>The Stock Show Atmosphere</h2>
   <p>The Fort Worth Stock Show runs for several weeks, encompassing livestock exhibitions, rodeo performances, equestrian competitions, and the full spectrum of western agriculture and culture. The WGH is one of the marquee equestrian events within the show, drawing large crowds of knowledgeable western fans who understand and appreciate the athleticism and horsemanship on display at the highest level.</p>
   <p>For riders and horses competing in the WGH, the Fort Worth atmosphere — packed arenas, experienced audiences, and the weight of the event's history — creates a competitive environment that tests not only athletic ability but composure and presence under pressure. Champions at Fort Worth earn their title in conditions that mirror the very best western equestrian competition anywhere in the world.</p>
-  <div class="related-links">
-    <h3>Related Pages</h3>
-    <a href="https://worldsgreatesthorseman.com/topic/nrcha-worlds-greatest-horseman.html">WGH Competition Overview</a>
-    <a href="https://worldsgreatesthorseman.com/topic/worlds-greatest-horseman-winners.html">All-Time Winners</a>
-    <a href="https://worldsgreatesthorseman.com">Full Champion Roll</a>
+  
+<div class="cross-links">
+  <h4>Related Topics</h4>
+  <div class="cross-links-row">
+    <a href="/topic/nrcha-worlds-greatest-horseman.html" class="cross-tag">About the WGH</a>
+      <a href="/topic/nrcha-history.html" class="cross-tag">NRCHA History</a>
+      <a href="/topic/worlds-greatest-horseman-winners.html" class="cross-tag">All-Time Champions</a>
+      <a href="/topic/reined-cow-horse.html" class="cross-tag">Reined Cow Horse</a>
+      <a href="/topic/cow-work-competition.html" class="cross-tag">Cow Work</a>
   </div>
-
+  <h4 style="margin-top:10px;">Related Champions</h4>
+  <div class="cross-links-row">
+    <a href="/champions/jordan-williams_2026.html" class="cross-tag champ">Jordan Williams — 2026</a>
+      <a href="/champions/erin-taormino_2025.html" class="cross-tag champ">Erin Taormino — 2025</a>
+      <a href="/champions/corey-cushing_2022.html" class="cross-tag champ">Corey Cushing — 2022</a>
+      <a href="/champions/shawn-hays_2024.html" class="cross-tag champ">Shawn Hays — 2024</a>
+      <a href="/champions/phillip-ralls_2023.html" class="cross-tag champ">Phillip Ralls — 2023</a>
+  </div>
+</div>
 </div>
 <footer class="footer">
   <p><a href="https://worldsgreatesthorseman.com">WorldsGreatestHorseman.com</a> &#8212; The Definitive NRCHA Championship Record</p>
